@@ -1,0 +1,8 @@
+<div class="jumbotron">
+  <h3><strong>Location:</strong> <%= @location.location %></h3>
+  <h3><strong>Phone:</strong> <%= @location.phone %></h3>
+  <h3><strong>Address:</strong> <%= @location.address %></h3>
+</div>
+
+<%= link_to 'Edit', edit_location_path(@location) %> |
+<%= link_to 'Back', location_path %>

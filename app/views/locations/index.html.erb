@@ -1,0 +1,19 @@
+<h1>Our Locations</h1>
+<div class="row">
+<% @locations.each do |location| %>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <div class="caption">
+        <h3><%= location.location %></h3>
+        <h3>Phone: <%= location.phone %></h3>
+        <h3>Address: <%= location.address %></h3>
+        <%= link_to "More Info", location, class: "btn btn-default" %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
+
+<br>
+
+<%= link_to 'New Location', new_location_path, class: "btn btn-primary" %>
