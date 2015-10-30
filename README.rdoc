@@ -2,4 +2,6 @@
 
 This is my README file. There are many like it, but this one is mine.
 
+I needed to make this change to test git & gitub functionality.
+
 .tps
